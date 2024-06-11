@@ -9,17 +9,24 @@ class LoginScreen extends StatelessWidget {
 
   LoginScreen({super.key});
 
-  void _showSnackbar(BuildContext context, String message) {
-    final snackBar = SnackBar(content: Text(message));
+  void _showSnackbar(BuildContext context, String message,
+      {bool isError = false}) {
+    final snackBar = SnackBar(
+      content: Text(
+        message,
+        style: TextStyle(color: isError ? Colors.white : Colors.white),
+      ),
+      backgroundColor: isError ? Colors.red : Colors.black,
+    );
     ScaffoldMessenger.of(context).showSnackBar(snackBar);
   }
 
   Future<void> _handleSignUp(BuildContext context) async {
-    Either<String, bool> result = await _authService.signUp(
+    var result = await _authService.signUp(
         _emailController.text, _passwordController.text);
     result.fold(
-      (error) => _showSnackbar(context, error),
-      (_) => _showSnackbar(context, 'Sign Up Successful!'),
+      (error) => _showSnackbar(context, error, isError: true),
+      (_) => _showSnackbar(context, 'Sign In Successful!'),
     );
   }
 
@@ -27,7 +34,7 @@ class LoginScreen extends StatelessWidget {
     Either<String, bool> result = await _authService.signIn(
         _emailController.text, _passwordController.text);
     result.fold(
-      (error) => _showSnackbar(context, error),
+      (error) => _showSnackbar(context, error, isError: true),
       (_) => _showSnackbar(context, 'Sign In Successful!'),
     );
   }
