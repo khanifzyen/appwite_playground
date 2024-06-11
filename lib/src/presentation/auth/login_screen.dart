@@ -1,46 +1,17 @@
 import 'package:flutter/material.dart';
-import 'package:dartz/dartz.dart';
-import '../../services/auth/auth_service.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
+import '../../repositories/auth/provider/auth_repository_provider.dart';
 
-class LoginScreen extends StatelessWidget {
-  final AuthService _authService = AuthService();
+class LoginScreen extends ConsumerWidget {
+  // final AuthService _authService = AuthService();
   final TextEditingController _emailController = TextEditingController();
   final TextEditingController _passwordController = TextEditingController();
 
   LoginScreen({super.key});
 
-  void _showSnackbar(BuildContext context, String message,
-      {bool isError = false}) {
-    final snackBar = SnackBar(
-      content: Text(
-        message,
-        style: TextStyle(color: isError ? Colors.white : Colors.white),
-      ),
-      backgroundColor: isError ? Colors.red : Colors.black,
-    );
-    ScaffoldMessenger.of(context).showSnackBar(snackBar);
-  }
-
-  Future<void> _handleSignUp(BuildContext context) async {
-    var result = await _authService.signUp(
-        _emailController.text, _passwordController.text);
-    result.fold(
-      (error) => _showSnackbar(context, error, isError: true),
-      (_) => _showSnackbar(context, 'Sign In Successful!'),
-    );
-  }
-
-  Future<void> _handleSignIn(BuildContext context) async {
-    Either<String, bool> result = await _authService.signIn(
-        _emailController.text, _passwordController.text);
-    result.fold(
-      (error) => _showSnackbar(context, error, isError: true),
-      (_) => _showSnackbar(context, 'Sign In Successful!'),
-    );
-  }
-
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context, WidgetRef ref) {
+    final authState = ref.watch(authRepositoryProvider);
     return Scaffold(
       //appBar: AppBar(title: const Text('Login')),
       body: Center(

@@ -7,7 +7,8 @@ class AuthService {
 
   AuthService() : _account = Account(AppwriteClient.getInstance());
 
-  Future<Either<String, bool>> signUp(String email, String password) async {
+  Future<Either<String, bool>> signUp(
+      {required String email, required String password}) async {
     try {
       await _account.create(
         userId: ID.unique(),
@@ -20,7 +21,8 @@ class AuthService {
     }
   }
 
-  Future<Either<String, bool>> signIn(String email, String password) async {
+  Future<Either<String, bool>> signIn(
+      {required String email, required String password}) async {
     try {
       await _account.createEmailPasswordSession(
         email: email,
