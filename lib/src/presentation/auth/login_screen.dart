@@ -4,6 +4,8 @@ import '../../services/auth/auth_service.dart';
 
 class LoginScreen extends StatelessWidget {
   final AuthService _authService = AuthService();
+  final TextEditingController _emailController = TextEditingController();
+  final TextEditingController _passwordController = TextEditingController();
 
   LoginScreen({super.key});
 
@@ -13,8 +15,8 @@ class LoginScreen extends StatelessWidget {
   }
 
   Future<void> _handleSignUp(BuildContext context) async {
-    Either<String, bool> result =
-        await _authService.signUp('khanif.zyen@gmail.com', '12345678');
+    Either<String, bool> result = await _authService.signUp(
+        _emailController.text, _passwordController.text);
     result.fold(
       (error) => _showSnackbar(context, error),
       (_) => _showSnackbar(context, 'Sign Up Successful!'),
@@ -22,8 +24,8 @@ class LoginScreen extends StatelessWidget {
   }
 
   Future<void> _handleSignIn(BuildContext context) async {
-    Either<String, bool> result =
-        await _authService.signIn('khanif.zyen@gmail.com', '12345678');
+    Either<String, bool> result = await _authService.signIn(
+        _emailController.text, _passwordController.text);
     result.fold(
       (error) => _showSnackbar(context, error),
       (_) => _showSnackbar(context, 'Sign In Successful!'),
@@ -33,20 +35,48 @@ class LoginScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Login')),
+      //appBar: AppBar(title: const Text('Login')),
       body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            ElevatedButton(
-              onPressed: () => _handleSignUp(context),
-              child: const Text('Sign Up'),
+        child: Padding(
+          padding: const EdgeInsets.all(16.0),
+          child: SingleChildScrollView(
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                const Text(
+                  "Login",
+                  style: TextStyle(fontSize: 25),
+                ),
+                const SizedBox(height: 16),
+                TextField(
+                  controller: _emailController,
+                  decoration: const InputDecoration(
+                    border: OutlineInputBorder(),
+                    labelText: 'Email',
+                  ),
+                ),
+                const SizedBox(height: 16),
+                TextField(
+                  controller: _passwordController,
+                  decoration: const InputDecoration(
+                    border: OutlineInputBorder(),
+                    labelText: 'Password',
+                  ),
+                  obscureText: true,
+                ),
+                const SizedBox(height: 16),
+                ElevatedButton(
+                  onPressed: () => _handleSignUp(context),
+                  child: const Text('Sign Up'),
+                ),
+                const SizedBox(height: 16),
+                ElevatedButton(
+                  onPressed: () => _handleSignIn(context),
+                  child: const Text('Sign In'),
+                ),
+              ],
             ),
-            ElevatedButton(
-              onPressed: () => _handleSignIn(context),
-              child: const Text('Sign In'),
-            ),
-          ],
+          ),
         ),
       ),
     );

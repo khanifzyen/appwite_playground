@@ -1,0 +1,472 @@
+{
+  "type": "excalidraw",
+  "version": 2,
+  "source": "https://marketplace.visualstudio.com/items?itemName=pomdtr.excalidraw-editor",
+  "elements": [
+    {
+      "type": "rectangle",
+      "version": 83,
+      "versionNonce": 381493222,
+      "isDeleted": false,
+      "id": "TriZ4XjWckMB9Pk13_n7I",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "angle": 0,
+      "x": 8.589828491210938,
+      "y": 210.42642974853516,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "#ffc9c9",
+      "width": 241.328125,
+      "height": 80.32553100585938,
+      "seed": 618258618,
+      "groupIds": [],
+      "frameId": null,
+      "roundness": {
+        "type": 3
+      },
+      "boundElements": [
+        {
+          "type": "text",
+          "id": "EssqP4RLcz7RllmxcV4uJ"
+        },
+        {
+          "id": "cw5yH9-AkBuq7yL6gUJNM",
+          "type": "arrow"
+        },
+        {
+          "id": "I7iAK6stJVj4Eph1W92Ug",
+          "type": "arrow"
+        }
+      ],
+      "updated": 1718089975744,
+      "link": null,
+      "locked": false
+    },
+    {
+      "type": "text",
+      "version": 83,
+      "versionNonce": 1182899110,
+      "isDeleted": false,
+      "id": "EssqP4RLcz7RllmxcV4uJ",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "angle": 0,
+      "x": 26.739242553710938,
+      "y": 225.58919525146484,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "#ffc9c9",
+      "width": 205.029296875,
+      "height": 50,
+      "seed": 387037562,
+      "groupIds": [],
+      "frameId": null,
+      "roundness": null,
+      "boundElements": [],
+      "updated": 1718089975762,
+      "link": null,
+      "locked": false,
+      "fontSize": 20,
+      "fontFamily": 1,
+      "text": "membuat UI dengan \nbutton Sign Up, Sign In",
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": "TriZ4XjWckMB9Pk13_n7I",
+      "originalText": "membuat UI dengan button Sign Up, Sign In",
+      "lineHeight": 1.25,
+      "baseline": 46
+    },
+    {
+      "type": "arrow",
+      "version": 357,
+      "versionNonce": 1488379494,
+      "isDeleted": false,
+      "id": "cw5yH9-AkBuq7yL6gUJNM",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "angle": 0,
+      "x": 119.00061189681503,
+      "y": 198.4081802368163,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "#ffc9c9",
+      "width": 0.7196023597081194,
+      "height": 40.820251464843636,
+      "seed": 1313897018,
+      "groupIds": [],
+      "frameId": null,
+      "roundness": {
+        "type": 2
+      },
+      "boundElements": [],
+      "updated": 1718089975744,
+      "link": null,
+      "locked": false,
+      "startBinding": {
+        "elementId": "TriZ4XjWckMB9Pk13_n7I",
+        "focus": -0.09205705223256905,
+        "gap": 12.018249511718864
+      },
+      "endBinding": {
+        "elementId": "l8soHbqzv14Fekgebb_5O",
+        "focus": 0.1435549648358414,
+        "gap": 9.84381103515625
+      },
+      "lastCommittedPoint": null,
+      "startArrowhead": null,
+      "endArrowhead": "arrow",
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          0.7196023597081194,
+          -40.820251464843636
+        ]
+      ]
+    },
+    {
+      "type": "rectangle",
+      "version": 241,
+      "versionNonce": 1884955046,
+      "isDeleted": false,
+      "id": "l8soHbqzv14Fekgebb_5O",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "angle": 0,
+      "x": 32.07942199707031,
+      "y": 37.744117736816406,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "width": 207.65624999999994,
+      "height": 110,
+      "seed": 1501111034,
+      "groupIds": [],
+      "frameId": null,
+      "roundness": {
+        "type": 3
+      },
+      "boundElements": [
+        {
+          "type": "text",
+          "id": "oXcLcvX0_C66snUOiAfAc"
+        },
+        {
+          "id": "cw5yH9-AkBuq7yL6gUJNM",
+          "type": "arrow"
+        }
+      ],
+      "updated": 1718089975745,
+      "link": null,
+      "locked": false
+    },
+    {
+      "type": "text",
+      "version": 331,
+      "versionNonce": 1750808294,
+      "isDeleted": false,
+      "id": "oXcLcvX0_C66snUOiAfAc",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "angle": 0,
+      "x": 55.839187622070284,
+      "y": 55.244117736816406,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "width": 160.13671875,
+      "height": 75,
+      "seed": 1930343354,
+      "groupIds": [],
+      "frameId": null,
+      "roundness": null,
+      "boundElements": [],
+      "updated": 1718089975766,
+      "link": null,
+      "locked": false,
+      "fontSize": 20,
+      "fontFamily": 1,
+      "text": "pastikan user dan \nsession masuk di \nappwrite console",
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": "l8soHbqzv14Fekgebb_5O",
+      "originalText": "pastikan user dan session masuk di appwrite console",
+      "lineHeight": 1.25,
+      "baseline": 71
+    },
+    {
+      "type": "rectangle",
+      "version": 197,
+      "versionNonce": 818835494,
+      "isDeleted": false,
+      "id": "lbtTqW-rV5T9PkkTf6_R1",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "angle": 0,
+      "x": 336.08204650878906,
+      "y": 205.7558822631836,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "#ffc9c9",
+      "width": 241.328125,
+      "height": 81.15887451171876,
+      "seed": 221523066,
+      "groupIds": [],
+      "frameId": null,
+      "roundness": {
+        "type": 3
+      },
+      "boundElements": [
+        {
+          "type": "text",
+          "id": "Jn4ZRNpc8IOnSzmpMHbGF"
+        },
+        {
+          "id": "ffEYO7y563-_qLhnDSnhs",
+          "type": "arrow"
+        },
+        {
+          "id": "I7iAK6stJVj4Eph1W92Ug",
+          "type": "arrow"
+        }
+      ],
+      "updated": 1718089975745,
+      "link": null,
+      "locked": false
+    },
+    {
+      "type": "text",
+      "version": 291,
+      "versionNonce": 719284774,
+      "isDeleted": false,
+      "id": "Jn4ZRNpc8IOnSzmpMHbGF",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "angle": 0,
+      "x": 349.84181213378906,
+      "y": 221.33531951904297,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "#ffc9c9",
+      "width": 213.80859375,
+      "height": 50,
+      "seed": 1571589434,
+      "groupIds": [],
+      "frameId": null,
+      "roundness": null,
+      "boundElements": [],
+      "updated": 1718089975770,
+      "link": null,
+      "locked": false,
+      "fontSize": 20,
+      "fontFamily": 1,
+      "text": "menambahkan textfield \nusername dan password",
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": "lbtTqW-rV5T9PkkTf6_R1",
+      "originalText": "menambahkan textfield username dan password",
+      "lineHeight": 1.25,
+      "baseline": 46
+    },
+    {
+      "type": "arrow",
+      "version": 644,
+      "versionNonce": 1449205414,
+      "isDeleted": false,
+      "id": "ffEYO7y563-_qLhnDSnhs",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "angle": 0,
+      "x": 444.97224847787174,
+      "y": 193.73763275146473,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "#ffc9c9",
+      "width": 0.460448705570343,
+      "height": 38.64578247070301,
+      "seed": 1775949306,
+      "groupIds": [],
+      "frameId": null,
+      "roundness": {
+        "type": 2
+      },
+      "boundElements": [],
+      "updated": 1718089975745,
+      "link": null,
+      "locked": false,
+      "startBinding": {
+        "elementId": "lbtTqW-rV5T9PkkTf6_R1",
+        "gap": 12.018249511718864,
+        "focus": -0.09205705223256905
+      },
+      "endBinding": {
+        "elementId": "E7afGlqsGZyd2TNwQQiW6",
+        "gap": 9.84381103515625,
+        "focus": 0.1435549648358414
+      },
+      "lastCommittedPoint": null,
+      "startArrowhead": null,
+      "endArrowhead": "arrow",
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          -0.460448705570343,
+          -38.64578247070301
+        ]
+      ]
+    },
+    {
+      "type": "rectangle",
+      "version": 310,
+      "versionNonce": 2001885670,
+      "isDeleted": false,
+      "id": "E7afGlqsGZyd2TNwQQiW6",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "angle": 0,
+      "x": 354.9102020263672,
+      "y": 35.24803924560547,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "width": 207.65624999999994,
+      "height": 110,
+      "seed": 314705594,
+      "groupIds": [],
+      "frameId": null,
+      "roundness": {
+        "type": 3
+      },
+      "boundElements": [
+        {
+          "type": "text",
+          "id": "3_0bTT0CywmwIjdm7MfaG"
+        },
+        {
+          "id": "ffEYO7y563-_qLhnDSnhs",
+          "type": "arrow"
+        }
+      ],
+      "updated": 1718089975745,
+      "link": null,
+      "locked": false
+    },
+    {
+      "type": "text",
+      "version": 396,
+      "versionNonce": 1291531622,
+      "isDeleted": false,
+      "id": "3_0bTT0CywmwIjdm7MfaG",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "angle": 0,
+      "x": 378.6699676513672,
+      "y": 52.74803924560547,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "width": 160.13671875,
+      "height": 75,
+      "seed": 553983866,
+      "groupIds": [],
+      "frameId": null,
+      "roundness": null,
+      "boundElements": [],
+      "updated": 1718089975773,
+      "link": null,
+      "locked": false,
+      "fontSize": 20,
+      "fontFamily": 1,
+      "text": "pastikan user dan \nsession masuk di \nappwrite console",
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": "E7afGlqsGZyd2TNwQQiW6",
+      "originalText": "pastikan user dan session masuk di appwrite console",
+      "lineHeight": 1.25,
+      "baseline": 71
+    },
+    {
+      "type": "arrow",
+      "version": 55,
+      "versionNonce": 1824888934,
+      "isDeleted": false,
+      "id": "I7iAK6stJVj4Eph1W92Ug",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "angle": 0,
+      "x": 265.59510803222656,
+      "y": 250.10089874267578,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "width": 58.828125,
+      "height": 1.341156005859375,
+      "seed": 1357324346,
+      "groupIds": [],
+      "frameId": null,
+      "roundness": {
+        "type": 2
+      },
+      "boundElements": [],
+      "updated": 1718089975745,
+      "link": null,
+      "locked": false,
+      "startBinding": {
+        "elementId": "TriZ4XjWckMB9Pk13_n7I",
+        "focus": 0.06105267247386654,
+        "gap": 15.677154541015625
+      },
+      "endBinding": {
+        "elementId": "lbtTqW-rV5T9PkkTf6_R1",
+        "focus": 0.013668411119050079,
+        "gap": 11.6588134765625
+      },
+      "lastCommittedPoint": null,
+      "startArrowhead": null,
+      "endArrowhead": "arrow",
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          58.828125,
+          -1.341156005859375
+        ]
+      ]
+    }
+  ],
+  "appState": {
+    "gridSize": null,
+    "viewBackgroundColor": "#ffffff"
+  },
+  "files": {}
+}
